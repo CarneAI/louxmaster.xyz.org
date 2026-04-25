@@ -1,0 +1,149 @@
+.header-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px; /* Altura suficiente para cubrir la imagen y el texto */
+    background-color: #333; /* Gris oscuro */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+.header-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial;
+    position: absolute;
+    top: 15px;
+    left: 120px;
+    font-size: 65px;
+    color: white;
+}
+
+h3 {
+    font-family: Arial;
+    position: absolute;
+    top: 35px;
+    left: 500px;
+    font-size: 40px;
+    color: rgb(90, 115, 163);
+}
+
+/* Se eliminó la regla general de img. Reglas específicas para .logo y .product-image abajo. */
+
+.logo { /* Regla específica para la imagen del logo */
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    border-radius: 50%; /* Mantener circular para el logo */
+    width: 70px; /* Movido desde HTML */
+    height: 70px; /* Movido desde HTML */
+}
+
+h6iphone, h6mac, h6ipad, h6watch { /* Agrupado para propiedades comunes */
+    font-family: Arial;
+    position: absolute; /* Mantener posicionamiento absoluto dentro de header-bar */
+    top: 70px;
+    font-size: 20px;
+    color: black;
+    color: white; /* Color original */
+    cursor: pointer;
+}
+
+h6iphone { left: 800px; }
+h6mac { left: 1000px; }
+h6ipad { left: 1200px; }
+h6watch { left: 1400px; }
+
+/* Títulos debajo de la barra de encabezado */
+.main-title {
+    font-family: Arial;
+    font-size: 50px; /* Tamaño de fuente original de h1tittle */
+    color: black;
+    position: absolute;
+    top: 250px; /* Posición vertical específica */
+    left: 550px; /* Posición izquierda específica */
+}
+
+.product-line-title {
+    font-family: Arial;
+    font-size: 45px; /* Tamaño de fuente original de h1ittle */
+    color: black;
+    position: absolute;
+    top: 350px; /* Posición vertical específica para separar del título anterior */
+    left: 600px; /* Posición izquierda específica */
+}
+
+/* Contenedor de la galería de imágenes de productos */
+.product-gallery {
+    width: 100%;
+    position: absolute;
+    top: 500px; /* Posición vertical de la galería completa */
+    left: 120px; /* Alineación horizontal de la galería */
+    display: flex; /* Organizar imágenes horizontalmente */
+    justify-content: flex-start; /* Alinear elementos al inicio */
+    align-items: flex-start; /* Alinear elementos al inicio */
+    flex-wrap: wrap; /* Permitir que las imágenes pasen a la siguiente línea si es necesario */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.product-name15 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 20px; /* Espacio entre la imagen y el nombre usando top */
+    left: 0px;
+    color: #333;
+}
+
+/* Estilo para imágenes de productos individuales */
+.product-image {
+    width: 250px; /* Ancho especificado */
+    height: 350px; /* Alto especificado */
+    border-radius: 0; /* Contornos cuadrados, no circulares */
+    object-fit: contain; /* Asegura que toda la imagen sea visible dentro de los límites */
+    position: relative;
+}
+
+/* Etiquetas específicas para cada iPhone */
+.iphone-17-pm {
+    top: -70px;  /* Ajusta este valor para mover el iPhone 17 verticalmente */
+    left: -30px; /* Ajusta este valor para mover el iPhone 17 horizontalmente */
+    width: 375px; /* Ancho específico para iPhone 17 Pro Max */
+    height: 375px; /* Alto específico para iPhone 17 Pro Max */
+}
+
+.iphone-15-pm {
+    top: -15px;  /* Ajusta este valor para mover el iPhone 15 verticalmente */
+    left: 0px; /* Ajusta este valor para mover el iPhone 15 horizontalmente */
+    width: 265px; /* Ancho específico para iPhone 15 Pro Max */
+    height: 265px; /* Alto específico para iPhone 15 Pro Max */
+}
+
+.product-name17 {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -90px; /* Espacio entre la imagen y el nombre usando top */
+    left: -20px;
+    color: #333;
+}
+
+.mac-neo {
+    top: -200px;  /* Ajusta este valor para mover el Mac Neo verticalmente */
+    left: 1000px; /* Ajusta este valor para mover el Mac Neo horizontalmente */
+    width: 350px; /* Ancho específico para Mac Neo */
+    height: 175px; /* Alto específico para Mac Neo */
+}
